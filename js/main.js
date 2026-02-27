@@ -16,18 +16,3 @@ btnP3.addEventListener('click', function () {
     window.location.href = './pages/projeto03.html';
 });
 
-
-//     function cacho(x, y) {
-//     return x + y
-
-//     const banana = cacho
-//     // arrow function
-//     const uva =  () => 'sou uma fruta';
-
-//     // exemplo funcao literal
-//     function uva() {
-//         return('sou uma fruta!!!!')
-//     }
-
-
-// };

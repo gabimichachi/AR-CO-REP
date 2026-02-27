@@ -1,55 +1,51 @@
-/* variaveis do design system */
-
 :root {
-    --primary-color: #F6C445;
-    --primary-hover: #E5B233;
-    --bg-color: #FFF8E6;
-    --text-color: #5C3A21;
-    --white: #ffffff;
-    --shadow: 0 4px 6px -1px rgba(92, 58, 33, 0.15), 0 2px 4px rgba(92, 58, 33, 0.1);
-    --radius: 12px;
-    --font-main: "Montserrat", sans-serif;
+    --primary-color: #F6D860;       
+    --primary-hover: #FFF3B0;       
+    --bg-color: #FDF6E3;           
+    --text-color: #4B2E1E;          
+    --button-text: #4B2E1E;
+    --shadow: 0 6px 12px rgba(122, 78, 45, 0.15);
+    --radius: 18px;
+    font-family: 'Patrick Hand', cursive;
+    
 }
-/* reset básico */
 
-body{
+body {
     font-family: var(--font-main);
     background-color: var(--bg-color);
-    color:var(--text-color);
+    color: var(--text-color);
     display: flex;
     flex-direction: column;     
     align-items: center;
     justify-content: center;
     min-height: 100vh;
     text-align: center;
-    
 }
 
-/* header */
 .project__header h1 {
-
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-color);
 }
 
-/*estilização dos botões (inputs e botão dinâmico */
 .project__button-group input[type="button"],
-button{
+button {
     background-color: var(--primary-color);
-    color: var(--white);
-    border: none;
-    padding: 12px 24px;
+    color: var(--button-text);
+    border: 2px solid #7A4E2D;
+    padding: 12px 28px;
     margin: 10px;
     font-size: 1rem;
     font-weight: 600;
     border-radius: var(--radius);
     cursor: pointer;
     box-shadow: var(--shadow);
-    transition: all 0.3s ease;
-
+    transition: all 0.25s ease;
 }
 
 .project__button-group input[type="button"]:hover,
-button:hover{
+button:hover {
     background-color: var(--primary-hover);
-    transform: translateY(-2px);
-    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 18px rgba(122, 78, 45, 0.25);
 }
