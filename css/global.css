@@ -11,3 +11,45 @@
     --font-main: "Montserrat", sans-serif;
 }
 /* reset básico */
+
+body{
+    font-family: var(--font-main);
+    background-color: var(--bg-color);
+    color:var(--text-color);
+    display: flex;
+    flex-direction: column;     
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    
+}
+
+/* header */
+.project__header h1 {
+
+}
+
+/*estilização dos botões (inputs e botão dinâmico */
+.project__button-group input[type="button"],
+button{
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 12px 24px;
+    margin: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: var(--radius);
+    cursor: pointer;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+
+}
+
+.project__button-group input[type="button"]:hover,
+button:hover{
+    background-color: var(--primary-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+}

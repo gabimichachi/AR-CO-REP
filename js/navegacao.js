@@ -17,8 +17,4 @@ function criarBotaoVoltar(){
 
 };
 
-// const criarBtnVoltar() =>{
-
-// };
-
 window.onload = criarBotaoVoltar();  
