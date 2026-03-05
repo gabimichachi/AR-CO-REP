@@ -1,0 +1,125 @@
+:root {
+    --primary-color: #F9D976;
+    --primary-hover: #F4C95D;
+    --secondary-color: #FFF3D9;
+    --bg-color: #FFF8EC;
+    --text-color: #6B4E3D;
+    --input-bg: #FFFBF3;
+    --shadow: 0 8px 20px rgba(107, 78, 61, 0.08);
+    --radius: 20px;
+    --font-main: "Montserrat", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Card principal */
+.calculator {
+    background-color: var(--secondary-color);
+    padding: 40px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Título */
+.calculator__title {
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+/* Campos */
+.calculator__form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.calculator__label {
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+}
+
+.calculator__input {
+    padding: 12px;
+    border-radius: 14px;
+    border: 1px solid #E8D5A8;
+    background-color: var(--input-bg);
+    font-size: 1rem;
+    transition: 0.2s ease;
+}
+
+.calculator__input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(249, 217, 118, 0.25);
+}
+
+/* Botões */
+.calculator__buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.calculator__button {
+    flex: 1;
+    padding: 12px;
+    border-radius: 16px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.calculator__button--calculate {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+.calculator__button--calculate:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-2px);
+}
+
+.calculator__button--clear {
+    background-color: #F5E6C8;
+    color: var(--text-color);
+}
+
+.calculator__button--clear:hover {
+    background-color: #EED8B4;
+}
+
+/* resultado */
+.calculator__result-section {
+    margin-top: 25px;
+    padding: 20px;
+    background-color: #FFF1D1;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.calculator__result-title {
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+
+.calculator__result-text {
+    font-weight: 500;
+}

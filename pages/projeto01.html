@@ -2,24 +2,55 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>projeto 01</title>
-
-    <!-- fontes do google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
-
-    <!-- estilo global -->
-    <link rel="stylesheet" href="/css/global.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cantinho do IMC</title>
+  <link rel="stylesheet" href="/css/styles.css">
 </head>
 
 <body>
-    <h1>projeto 01</h1>
-    <!-- <script src="../js/navegacao.js"></script> -->
-     <script src="../js/global.js"></script>
-    <!-- <script src="../js/global-auto.js"></script> --> 
+
+  <main class="calculator">
+
+    <header class="calculator__header">
+      <h1 class="calculator__title"> ୧ ‧₊˚ cantinho imc ! 🍮 ⋅ ☆</h1>
+      <p class="calculator__subtitle">descubra seu índice de forma doce e simples. </p>
+    </header>
+
+    <section class="calculator__form-section">
+      <form class="calculator__form" id="imcForm">
+
+        <div class="calculator__form-group">
+          <label for="weight" class="calculator__label">peso (kg):</label>
+          <input type="number" id="weight" class="calculator__input" placeholder="Ex.: 70" required>
+        </div>
+
+        <div class="calculator__form-group">
+          <label for="height" class="calculator__label">altura (m):</label>
+          <input type="number" id="height" class="calculator__input" placeholder="Ex.: 1.75" step="0.01" required>
+        </div>
+
+        <div class="calculator__buttons">
+          <button type="button" class="calculator__button calculator__button--calculate"
+            onclick="calcularIMC()">calcular</button>
+
+          <button type="button" class="calculator__button calculator__button--clear"
+            onclick="limparCampos()">limpar</button>
+        </div>
+
+      </form>
+    </section>
+
+    <section class="calculator__result-section" id="resultSection">
+      <h2 class="calculator__result-title">resultado:</h2>
+      <p class="calculator__result-text" id="resultText">
+        preencha os campos e clique em "calcular".
+      </p>
+    </section>
+
+  </main>
+
+  <script src="./calcula-imc-v1.js"></script>
 </body>
 
-</html> 
+</html>

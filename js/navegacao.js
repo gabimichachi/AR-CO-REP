@@ -4,7 +4,7 @@ function criarBotaoVoltar(){
     const btnVoltar = document.createElement('button');
 
     // 2. definir o estilo do botão
-    btnVoltar.innerText = 'Voltar';
+    btnVoltar.innerText = 'voltar';
     btnVoltar.style.marginTop = '20px'
 
     // 3. lógica do click
